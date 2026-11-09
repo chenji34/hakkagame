@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f5ef"><title>客語練習所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-icon">𠊎</span><span>客語<span class="brand-light">練習所</span></span></a><span class="top-note"><i></i> 聽・講・學客語</span></header>
+  <main class="layout">
+    <section class="intro"><div class="eyebrow"><span>HAKKA SPEAKING CLUB</span><span class="line"></span><span>01 / DAILY PRACTICE</span></div>
+      <h1>用客語，<br><em>講出生活的樣子。</em></h1>
+      <p>聽一句、跟著講。從日常情境開始，<br>一步一步把客語說得更自然。</p>
+      <div class="dialect"><label for="dialect">今天想練習</label><div class="select-wrap"><select id="dialect"><option value="sixian">四縣腔</option><option value="hailu">海陸腔</option><option value="dapu">大埔腔</option><option value="raoping">饒平腔</option><option value="zhaoan">詔安腔</option><option value="nansixian">南四縣腔</option></select><span>⌄</span></div></div>
+      <div class="daily"><span class="daily-mark">✳</span><span><strong>每日一題</strong><small>給自己一分鐘，開口練習就開始了。</small></span></div>
+      <div class="vertical-note">SPEAK A LITTLE EVERY DAY</div>
+    </section>
+    <section class="practice" id="practice" aria-live="polite"><div class="card-top"><span><span class="dot"></span> TODAY'S PRACTICE</span><button class="sound-toggle" id="sound-toggle" title="播放答案" aria-label="播放參考答案" disabled>♫</button></div>
+      <div class="prompt-area"><span class="step">情境題 <span>／</span> 生活會話</span><h2 id="prompt">今天想吃什麼？</h2><p class="hint">試著用客語說說看</p></div>
+      <div class="answer-area"><div class="listen-row"><span class="speaker">♫</span><span><small>聽聽客語怎麼說</small><strong id="answer">產生題目後，聽聽參考答案</strong></span><button id="play" class="play" disabled aria-label="播放">▶</button></div></div>
+      <div class="controls"><button id="new-question" class="primary"><span>換一個情境</span><b>↗</b></button><button id="record" class="record" disabled><span class="mic">●</span><span id="record-label">開始錄音作答</span></button></div>
+      <div class="feedback" id="feedback" hidden></div>
+      <div class="card-foot"><span>✳ 放輕鬆，試著唸出來就很好。</span><span id="status">準備開始</span></div>
+    </section>
+    <footer>MADE FOR EVERYDAY HAKKA　<span>✳</span>　客語，是生活裡的聲音。</footer>
+  </main><div class="toast" id="toast" role="status"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
